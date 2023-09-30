@@ -71,6 +71,13 @@ public class ForCube : MonoBehaviour
     }
     public void heal()
     {
-        c = 5;
+        if (sphere.activeSelf)
+        {
+            sphere.SetActive(false);
+        }
+        else
+        {
+            sphere.SetActive(true);
+        }
     }
 }
